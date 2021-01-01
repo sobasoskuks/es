@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <style>
+      /*Fonts*/
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+
+      /*Base*/
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+        font: 100%;
+        font-weight: normal;
+        outline: none;
+        vertical-align: baseline;
+      }
+
+      /*Estilos Gerais*/
+      body {
+        height: 800px;
+        background: #99AAB5;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      /*CABEÇALHO*/
+      .header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background: #23272A;
+        padding: 15px 0;
+        z-index: 10;
+      }
+
+      .container {
+        width: 980px;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+      }
+
+      .header_menu {
+        text-align: center;
+      }
+
+      .header_menu ul {
+        list-style-type: none;
+      }
+
+      .header_menu ul li {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .header_menu ul li a {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      /*introdução*/
+      .intro {
+        height: 400px;
+        background: #2C2F33;
+        margin-top: 70px;
+        text-align: center;
+        padding-top: 70px;
+      }
+
+      .intro h1 {
+        font-size: 7em;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+
+      .btn {
+        display: inline;
+        position: relative;
+        margin: 0px 85px 0px 85px;
+        padding: 25px 30px;
+        background: #7289DA;
+        border-radius: 5px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+      }
+
+      .btn a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 21px;
+        text-align: center;
+        padding: 30px 0px 0px 0px;
+      }
+
+      /*Sobre*/
+      .about {
+        background: #23272A;
+      }
+
+      .about_title h2 {
+        font-size: 2em;
+        font-weight: bold;
+        padding: 20px 0;
+        text-align: center;
+        color: #fff;
+      }
+
+      .about_title h2:before,
+      .about_title h2:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #7289DA;
+        margin: 15px auto 10px auto;
+      }
+
+      .about_content .txt {
+        font-size: 17px;
+        color: #d2d8ea;
+        line-height: 27px;
+        margin: 0;
+        padding: 30px 120px 78px;
+      }
+
+      /*Funções do bot*/
+
+      .func {
+        height: 500px; /* testando o comprimento */
+        background: #23272A;
+      }
+
+      .func .func_title {
+        position: relative;
+        text-align: center;
+      }
+
+      .func .func_title h2 {
+        font-size: 2em;
+        font-weight: bold;
+        padding: 20px 0;
+        text-align: center;
+        color: #fff;
+      }
+
+      .func h2:before,
+      .func h2:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #7289DA;
+        margin: 15px auto 15px auto;
+      }
+
+      .func img {
+        float: left;
+        padding: 15px 30px;
+      }
+
+      .func_subtitle h3 {
+        position: relative;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 20px 0;
+        text-align: center;
+        color: #fff;
+      }
+
+      .func_subtitle p {
+        position: relative;
+        padding: 5px 30px;
+        color: #C9D8D2;
+      }
+
+      .left img {
+        float: right;
+      }
+
+      /* Mais Informações */
+
+      .info {
+        height: 346px;
+        background: #2C2F33;
+        margin-top: 0px;
+        text-align: center;
+        padding-top: 70px;
+      }
+
+      .info_title h2 {
+        font-size: 2em;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+
+      .info h2:before,
+      .info h2:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #7289DA;
+        margin: 15px auto 15px auto;
+      }
+
+      .info .btn {
+        margin: 0px 30px;
+        padding: 20px 10px;
+      }
+
+      .info .btn a {
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        padding: 30px 0px 0px 0px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      footer {
+        display: none;
+        height: 60px;
+        background: red;
+      }
+      
+      .simg {
+  border-radius: 50%;
+}
+      
+      .footer {
+   position: bottom;
+}
+      
+      .alligncen {
+        text-allign: center;
+      }
+      
+    </style>
+
+     <title>mitsuru</title>
+    <link rel="stylesheet" type="text/css" href="/mdb.min.css" />
+    <script src="/mdb.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      rel="stylesheet"
+    /> 
+    <meta property="og:title" content="mitsuru the purpose discord bot" />
+    <meta name="author" content="SobaToriSoya" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/attachments/791096090173636611/794457219948871700/20210101_134912.png"
+    />
+    <meta property="og:url" content="https://xfos.glitch.me" />
+    <meta
+      property="og:image"
+      content="https://cdn.discordapp.com/attachments/791096090173636611/794457062494437386/mitsuru.jpg"
+    />
+    <meta content="#7289da" name="theme-color" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=yes"
+    />
+    <meta property="og:site_name" content="MITSURU official website" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/755b6605e0.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header_menu">
+          <ul>
+            <li>
+              <a href="/"><b>home</b></a>
+            </li>
+            <li>
+              <a href="/invite"><b>invite</b></a>
+            </li>
+            <li>
+              <a href="#about"><b>about</b></a>
+            </li>
+          </ul>
+        </nav>
+        <!--NAV-->
+      </div>
+    </header>
+    <section class="intro container">
+      <h1>MITSURU</h1>
+      <div class="btn">
+        <a
+          target="_blank"
+          href="https://discord.com/api/oauth2/authorize?client_id=792004408380096523&permissions=8&redirect_uri=https%3A%2F%2Fmitsuru.glitch.me%2F&scope=bot"
+          ><i class="fas fa-plus"></i> ADD BOT</a
+        >
+      </div>
+      <div class="btn">
+        <a href="#soon" id="about"><i class="fas fa-terminal"></i> server</a>
+      </div>
+    </section>
+    <!--section Conteudo-->
+    <section class="about container">
+      <div class="about_title">
+        <h2>About</h2>
+      </div>
+      <div class="about_content">
+        <p class="txt">
+          <span class="alligncen">mitsuru is a purpose discord bot, this bot is developed alone by a
+          developer named ⠀ ⠀ soba, we happy where we can publish this bot! we hope
+            you like mitsuru</span>
+        </p>
+      </div>
+    </section>
+    <section class="about container">
+		<div class="about_title">
+			<h2>Staff</h2>
+		</div>
+		<div class="about_content">
+      <center>
+			<p class="txt">
+      <img src="https://images-ext-2.discordapp.net/external/HQ2kE5HOjjpUUD-BI2Xd4oit4mx1L_gTQoBPuPHwrpY/https/cdn.discordapp.com/avatars/739405880872927296/04c20ec87670c1ab1f6f1da588d19e07.webp" class="simg">
+      <br>
+        <b>Soba#2256</b>
+        <p class="footer" style="color:white">
+          <b>© 2020 copyright - mitsuru</b>
+        </p>
+        <br>
+          </p>
+      </center>
+		</div>
+	</section>
+  </body>
+</html>
